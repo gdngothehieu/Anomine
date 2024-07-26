@@ -71,6 +71,7 @@ function App() {
   } 
  
   useEffect(()=> {
+
     const filterList = () => {
       let newFilterMovieList = [];
       let moviesData = originalMoviesList;
@@ -105,7 +106,13 @@ function App() {
 
             </p>
         </div>
-        <div className="weather-with-you mt-4">
+        <div className="weather-with-you mt-4"
+        style={{
+          background: `linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url("./icons/weather_with_you.png")`,
+          backgroundRepeat: "repeat-y"
+
+        }}
+        >
             <div className='title'>
                 <p>Weather With You</p>
             </div>
