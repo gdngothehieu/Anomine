@@ -5,7 +5,7 @@ function Navbar({onChangeInput,...props}) {
     <div>
         <nav class="bg-black border-gray-200 dark:bg-gray-900">
         <div class="max-w-screen-xl flex flex-wrap items-center  mx-28 mb-4 ">
-            <a href="https://flowbite.com/" class="flex items-center mr-20">
+            <a  class="flex items-center mr-52">
                 <span class="self-center text-white anomine">Anomine</span>
             </a>
         
