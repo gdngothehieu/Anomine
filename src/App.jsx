@@ -96,7 +96,7 @@ function App() {
       <Navbar onChangeInput={onChangeInput}/>
 
       <div className='container'>
-        <div className="explore mt-11">
+        <div className="explore mt-4">
             Explore
         </div>
         <div>
