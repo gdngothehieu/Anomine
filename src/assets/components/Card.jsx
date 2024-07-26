@@ -7,42 +7,21 @@ import {
     DialogBody,
     DialogFooter,
   } from "@material-tailwind/react";
+import Banner from './Banner';
 function Card({item,...props}) {
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen(!open);
 
   return (
+    
     <div className='card'>
         <div>
-      
+        {open && <Banner item={item} setOpen={setOpen} open={open}/>}
 
-      <Dialog
-      className='ml-96 w-auto'
-      open={open} handler={handleOpen}>
-        <DialogHeader className='text-center'>{item.movieName}</DialogHeader>
-        <DialogBody className='ml-20'>
-          <img src={item.image} />
-        </DialogBody>
-        <DialogBody className='w-96'>
-        {item.description}
-      </DialogBody>
-      <DialogBody className='w-96'>
-        Tập: {item.episode}
-      </DialogBody>
-        <DialogFooter>
-          <Button
-            variant="text"
-            color="red"
-            onClick={handleOpen}
-            className="mr-1"
-          >
-            <span>Cancel</span>
-          </Button>
-        </DialogFooter>
-      </Dialog>
+
       
           </div>
-    <div class="" onClick={()=>{setOpen(true)}}  >
+    <div class="" onClick={()=>{setOpen(!open)}}  >
             <div 
             style={{
                 background:` linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url("${item.image}")`,
