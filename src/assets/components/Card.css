@@ -1,0 +1,39 @@
+.backgroundImage{
+    background-image: url("./icons/aboashi.png");
+}
+
+.movie-name {
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 16px;
+    color: #FFFFFF;
+    margin-left: 10%;
+    margin-top: 9px;
+
+}
+
+.imager {
+    margin-top:19px;
+}
+.card {
+    cursor: pointer;
+}
+
+.episode {
+    font-weight: 400;
+    font-family: "Poppins";
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+}
+
+.card-movie{
+    height: "240px";
+    background-repeat: no-repeat;
+    /* width: "160px"; */
+}
+
+.episode-title {
+    padding-top: 90%;
+    padding-left: 2%;
+}

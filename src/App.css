@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.weather-with-you{
+  /* background-image: url("./icons/weather_with_you.png"); */
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url("./icons/weather_with_you.png");
+
+  height: 400px;
+  min-width: 1200px;
+  background-repeat: repeat-y;
+  width: auto;
+  /* margin-left: 29px; */
+  padding-left: 2%;
+  color: linear-gradient(red, yellow);
+  border-radius: 12px;
+
+}
+
+.title{
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 64px;
+  color: #FFFFFF;
+  padding-top: 17%;
+}
+
+.description {
+  width: 40%;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  color: #FFFFFF;
+}
+
+.watch-today {
+  width: 387px;
+  height: 25px;
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 22px;
+  color: #868686;
+  margin-bottom: 19px;
+}
+
+.container {
+  padding-left: 7%;
+}
+
+.explore {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 32px;
+  color: #FFFFFF;
+}
+
+.new-release {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 32px;
+  color: #FFFFFF;
+  margin-top: 19px;
+  margin-bottom: 19px;
+
+}

@@ -1,0 +1,32 @@
+.anomine {
+    font-size: 36px;
+    height: 32px;
+    font-family: 'Poppins';
+    font-weight: 700;
+    line-height: 32px;
+}
+
+.navbar a {
+    padding-top: 15px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: #868686;
+}
+
+.anime-search {
+    width: 374.58px;
+    padding: 8px 100px 8px 18px;
+    color: #868686;
+    border-radius: 37px;
+    background-color: #374151;
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 30px;
+}
+
+.anime-list {
+    margin-left: 100px;
+    margin-right: 170px;
+}
