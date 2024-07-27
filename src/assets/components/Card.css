@@ -36,7 +36,7 @@
 }
 
 .episode-title {
-    padding-top: 90%;
+    padding-top: 110%;
     padding-left: 2%;
     
 }
@@ -47,3 +47,9 @@
     max-width: "1200px";
 }
 
+.episode{
+    color: #BEBEBE		;
+    font-size: 18px;
+    line-height: 18px;
+    padding-right: 36px;
+}

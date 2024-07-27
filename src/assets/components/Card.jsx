@@ -28,9 +28,9 @@ function Card({onClickMovieCard,item,...props}) {
             }}>
                 <div className="episode-title">
 
-                <h5  className="movie-name">Episode: {item.episode}</h5>
+                <p  className="episode">Episode: {item.episode}</p>
 
-                <h5 class="movie-name">{item.movieName}</h5>
+                <p className="movie-name">{item.movieName}</p>
                 </div>
 
 
