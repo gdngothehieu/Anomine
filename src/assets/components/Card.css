@@ -9,7 +9,9 @@
     color: #FFFFFF;
     margin-left: 10%;
     margin-top: 9px;
-
+    text-align: center;
+    padding-left: 0px !important;
+    padding-right: 65px;
 }
 
 .imager {
@@ -36,6 +38,7 @@
 .episode-title {
     padding-top: 90%;
     padding-left: 2%;
+    
 }
 
 .movie-card{
@@ -43,3 +46,4 @@
     background-repeat: "no-repeat";
     max-width: "1200px";
 }
+

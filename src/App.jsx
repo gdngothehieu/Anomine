@@ -117,7 +117,8 @@ function App() {
         </div>
         <div className="weather-with-you mt-4"
         style={{
-          background: `linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url(${moviePicked.image})`,
+          backgroundImage: `linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url(${moviePicked.image})`,
+          backgroundSize: "1200px",
           backgroundRepeat: "no-repeat"
 
         }}

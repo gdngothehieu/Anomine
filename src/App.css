@@ -6,7 +6,8 @@
   /* background-image: url("./icons/weather_with_you.png"); */
 
   height: 400px;
-  min-width: 1400px;
+  min-width: 1400px !important; 
+
   background-repeat: "no-repeat";
   width: auto;
   /* margin-left: 29px; */
