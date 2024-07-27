@@ -7,7 +7,7 @@
 
   height: 400px;
   min-width: 1400px;
-  background-repeat: no-repeat;
+  background-repeat: "no-repeat";
   width: auto;
   /* margin-left: 29px; */
   padding-left: 2%;
@@ -69,6 +69,3 @@
   max-width: 1200px;
 }
 
-.whole-container{
-  padding-left: "1000px" !important;
-}

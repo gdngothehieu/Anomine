@@ -19,10 +19,12 @@ function Card({onClickMovieCard,item,...props}) {
           </div>
     <div class="" onClick={()=>{onClickMovieCard(item)}}  >
             <div 
-            className="movie-card"
+            className='movie-card'
             style={{
                 background:` linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url("${item.image}")`,
-              
+                backgroundRepeat: "no-repeat",
+                height: "240px",
+                maxWidth: "1200px"
             }}>
                 <div className="episode-title">
 

@@ -130,8 +130,8 @@ function App() {
             </div>
         </div>  
         <div>
-            <h1 className='new-release  mt-4'>New Release</h1>
-            <div class="new-release-card grid grid-cols-6 ">
+            <h1 className='new-release mt-4'>New Release</h1>
+            <div class="grid grid-cols-6 " style={{maxWidth:"1200px"}}>
                 {
                      movieList.map((item,key)=>{
                         if(item.id !== "1"){
