@@ -37,3 +37,9 @@
     padding-top: 90%;
     padding-left: 2%;
 }
+
+.movie-card{
+    height: "240px";
+    background-repeat: "no-repeat";
+    max-width: "1200px";
+}

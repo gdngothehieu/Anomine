@@ -8,26 +8,21 @@ import {
     DialogFooter,
   } from "@material-tailwind/react";
 import Banner from './Banner';
-function Card({item,...props}) {
+function Card({onClickMovieCard,item,...props}) {
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen(!open);
 
   return (
     
     <div className='card'>
-        <div>
-        {open && <Banner item={item} setOpen={setOpen} open={open}/>}
-
-
-      
+        <div>      
           </div>
-    <div class="" onClick={()=>{setOpen(!open)}}  >
+    <div class="" onClick={()=>{onClickMovieCard(item)}}  >
             <div 
+            className="movie-card"
             style={{
                 background:` linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url("${item.image}")`,
-                height: "240px",
-                backgroundRepeat: "repeat-y",
-
+              
             }}>
                 <div className="episode-title">
 

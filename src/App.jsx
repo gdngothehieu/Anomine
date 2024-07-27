@@ -60,7 +60,11 @@ const originalMoviesList = [
 function App() {
   const [movieList, setMovieList] = useState(originalMoviesList);
   const [keyword,setKeyword] = useState("");
- 
+  const [moviePicked, setMoviePicked] = useState({
+    movieName: "Weather With You",
+    image: "./icons/weather_with_you.png",
+    description: 'Corrupt politicians, frenzied nationalists, and other warmongering forces constantly jeopardize the thin veneer of peace between neighboring countries Ostania and Westalis.'
+  });
   const onChangeInput = (e) => {
     
     if(!e.target.value){
@@ -70,6 +74,11 @@ function App() {
     setKeyword(e.target.value);
   } 
  
+  const onClickMovieCard = (item) => {
+    console.log(item);
+    setMoviePicked(item);
+  }
+
   useEffect(()=> {
 
     const filterList = () => {
@@ -93,7 +102,7 @@ function App() {
   },[keyword])
 
   return (
-    <div className='bg-black'>
+    <div className='bg-black whole-container '>
       <Navbar onChangeInput={onChangeInput}/>
 
       <div className='container'>
@@ -108,26 +117,26 @@ function App() {
         </div>
         <div className="weather-with-you mt-4"
         style={{
-          background: `linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url("./icons/weather_with_you.png")`,
-          backgroundRepeat: "repeat-y"
+          background: `linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url(${moviePicked.image})`,
+          backgroundRepeat: "no-repeat"
 
         }}
         >
             <div className='title'>
-                <p>Weather With You</p>
+                <p>{moviePicked.movieName} {moviePicked.episode ? `- Tập ${moviePicked.episode}` : null}</p>
             </div>
             <div className='description'>
-                <p> Corrupt politicians, frenzied nationalists, and other warmongering forces constantly jeopardize the thin veneer of peace between neighboring countries Ostania and Westalis. </p>
+                <p>  {moviePicked.description}</p>
             </div>
         </div>  
         <div>
             <h1 className='new-release  mt-4'>New Release</h1>
-            <div class="grid grid-cols-6  mt-4">
+            <div class="new-release-card grid grid-cols-6 ">
                 {
                      movieList.map((item,key)=>{
                         if(item.id !== "1"){
                             return <div>
-                            <Card item={item} />
+                            <Card item={item} onClickMovieCard={onClickMovieCard} />
                              </div>
                         }
                         
